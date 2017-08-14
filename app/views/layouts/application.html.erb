@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <% if @page_name %>
-      <title><%= "#{@page_name} | Ruby on Rails Tutorial Sample App" %></title>
-    <% else %>
-      <title>Sample App</title>
-    <% end %>
+      <title><%= title(yield(:title)) %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
