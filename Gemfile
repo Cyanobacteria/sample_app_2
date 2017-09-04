@@ -13,7 +13,8 @@ end
 
 
 
-
+gem 'jquery-rails'
+gem 'bootstrap-sass'
 
 gem 'bcrypt'
 gem 'rails-controller-testing'
